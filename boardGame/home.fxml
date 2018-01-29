@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<Pane xmlns:fx="http://javafx.com/fxml/1" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.111"
+      fx:controller="boardGame.HomeScreenController">
+    <children>
+        <Label layoutX="139.0" layoutY="35.0" prefHeight="52.0" prefWidth="323.0" text="WELCOME TO CONNECT4"
+               textFill="#720606">
+            <font>
+                <Font name="Chalkboard SE Bold" size="26.0"/>
+            </font>
+        </Label>
+        <Label layoutX="213.0" layoutY="87.0" prefHeight="37.0" prefWidth="175.0" text="GAME OPTION"
+               textAlignment="CENTER" textFill="#a40808">
+            <font>
+                <Font name="Chalkboard SE Bold" size="24.0"/>
+            </font>
+        </Label>
+        <JFXButton fx:id="humanVsHuman" buttonType="RAISED" layoutX="175.0" layoutY="140.0" onAction="#humanVsHuman"
+                   prefHeight="80.0" prefWidth="250.0" ripplerFill="RED" style="-fx-background-color: #CCCCFF;"
+                   text="HUMAN VS HUMAN" textFill="#860a0a">
+            <font>
+                <Font name="Chalkboard SE Regular" size="18.0"/>
+            </font>
+        </JFXButton>
+        <JFXButton fx:id="humanVsComputer" buttonType="RAISED" layoutX="175.0" layoutY="261.0"
+                   onAction="#humanVsComputer" prefHeight="80.0" prefWidth="250.0" ripplerFill="RED"
+                   style="-fx-background-color: #CCCCFF;" text="HUMAN VS COMPUTER" textFill="#860a0a">
+            <font>
+                <Font name="Chalkboard SE Regular" size="18.0"/>
+            </font>
+        </JFXButton>
+    </children>
+</Pane>

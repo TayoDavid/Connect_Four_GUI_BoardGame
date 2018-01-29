@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="boardGame.ChoosePlayerController">
+    <children>
+        <HBox prefHeight="500.0" prefWidth="700.0">
+            <children>
+                <Pane prefHeight="200.0" prefWidth="350.0">
+                    <children>
+                        <Label layoutX="21.0" layoutY="35.0" prefHeight="39.0" prefWidth="62.0" text="NAME:" textFill="#860a0a">
+                            <font>
+                                <Font name="Chalkboard SE Regular" size="18.0" />
+                            </font>
+                        </Label>
+                        <JFXTextField fx:id="txtPlayer1" focusColor="BLUE" labelFloat="true" layoutX="72.0" layoutY="28.0" maxWidth="250.0" minWidth="245.0" prefHeight="39.0" prefWidth="250.0" promptText="PLAYER 1">
+                            <font>
+                                <Font name="Chalkboard SE Regular" size="18.0" />
+                            </font>
+                        </JFXTextField>
+                        <Label layoutX="99.0" layoutY="94.0" prefHeight="39.0" prefWidth="152.0" text="CHOOSE A COLOUR" textAlignment="CENTER" textFill="#2f6f33">
+                            <font>
+                                <Font name="Chalkboard SE Bold" size="15.0" />
+                            </font>
+                        </Label>
+                        <Label layoutX="22.0" layoutY="175.0" prefHeight="40.0" prefWidth="70.0" text="RED">
+                            <font>
+                                <Font name="Chalkboard SE Regular" size="18.0" />
+                            </font>
+                        </Label>
+                        <Label layoutX="21.0" layoutY="255.0" prefHeight="40.0" prefWidth="70.0" text="YELLOW">
+                            <font>
+                                <Font name="Chalkboard SE Regular" size="18.0" />
+                            </font>
+                        </Label>
+                        <Label layoutX="21.0" layoutY="335.0" prefHeight="40.0" prefWidth="70.0" text="GREEN">
+                            <font>
+                                <Font name="Chalkboard SE Regular" size="18.0" />
+                            </font>
+                        </Label>
+                        <JFXButton fx:id="btnPlayer1_red" buttonType="RAISED" ellipsisString=".." layoutX="153.0" layoutY="170.0" maxWidth="50.0" minHeight="50.0" onAction="#chosenColor" prefHeight="50.0" prefWidth="50.0" ripplerFill="#0e6512" style="-fx-background-color: red; -fx-background-radius: 25;" text="" textFill="RED" />
+                        <JFXButton fx:id="btnPlayer1_yellow" buttonType="RAISED" ellipsisString=".." layoutX="153.0" layoutY="249.0" maxWidth="50.0" minHeight="50.0" onAction="#chosenColor" prefHeight="50.0" prefWidth="50.0" ripplerFill="#0e6512" style="-fx-background-color: yellow; -fx-background-radius: 25;" text="" textFill="YELLOW" />
+                        <JFXButton fx:id="btnPlayer1_green" buttonType="RAISED" ellipsisString=".." layoutX="153.0" layoutY="330.0" maxWidth="50.0" minHeight="50.0" onAction="#chosenColor" prefHeight="50.0" prefWidth="50.0" ripplerFill="YELLOW" style="-fx-background-color: green; -fx-background-radius: 25;" text="" textFill="#3d7c1a" />
+                        <Label fx:id="lblComment" alignment="CENTER" contentDisplay="CENTER" layoutX="10.0" layoutY="400.0" prefHeight="55.0" prefWidth="325.0" textFill="#860a0a" wrapText="true">
+                            <font>
+                                <Font name="Chalkboard SE Bold" size="18.0" />
+                            </font>
+                        </Label>
+                  <JFXButton fx:id="btnGoBack" buttonType="RAISED" layoutX="5.0" layoutY="455.0" onAction="#goBackToHomeScreen" prefHeight="40.0" prefWidth="152.0" text="&lt;-   GO BACK " textFill="#18c315">
+                     <font>
+                        <Font name="Chalkboard SE Bold" size="18.0" />
+                     </font>
+                  </JFXButton>
+                    </children>
+                </Pane>
+                <Separator orientation="VERTICAL" prefHeight="500.0" />
+                <VBox>
+                    <children>
+                        <Pane fx:id="player2Pane" maxHeight="400.0" minHeight="400.0" minWidth="350.0" prefHeight="400.0" prefWidth="350.0">
+                            <children>
+                                <Label layoutX="21.0" layoutY="31.0" prefHeight="39.0" prefWidth="62.0" text="NAME:" textFill="#860a0a">
+                                    <font>
+                                        <Font name="Chalkboard SE Regular" size="18.0" />
+                                    </font>
+                                </Label>
+                                <JFXTextField fx:id="txtPlayer2" focusColor="BLUE" labelFloat="true" layoutX="78.0" layoutY="27.0" prefWidth="250.0" promptText="PLAYER 2">
+                                    <font>
+                                        <Font name="Chalkboard SE Regular" size="18.0" />
+                                    </font>
+                                </JFXTextField>
+                                <Label layoutX="35.0" layoutY="95.0" prefHeight="46.0" prefWidth="278.0" text="CHOOSE A COLOUR (MUST NOT BE THE SAME AS PLAYER 1)" textAlignment="CENTER" textFill="#2f6f33" wrapText="true">
+                                    <font>
+                                        <Font name="Chalkboard SE Bold" size="15.0" />
+                                    </font>
+                                </Label>
+                                <Label layoutX="22.0" layoutY="175.0" prefHeight="40.0" prefWidth="70.0" text="RED">
+                                    <font>
+                                        <Font name="Chalkboard SE Regular" size="18.0" />
+                                    </font>
+                                </Label>
+                                <Label layoutX="21.0" layoutY="255.0" prefHeight="40.0" prefWidth="70.0" text="YELLOW">
+                                    <font>
+                                        <Font name="Chalkboard SE Regular" size="18.0" />
+                                    </font>
+                                </Label>
+                                <Label layoutX="21.0" layoutY="335.0" prefHeight="40.0" prefWidth="70.0" text="GREEN">
+                                    <font>
+                                        <Font name="Chalkboard SE Regular" size="18.0" />
+                                    </font>
+                                </Label>
+                                <JFXButton fx:id="btnPlayer2_red" buttonType="RAISED" ellipsisString=".." layoutX="153.0" layoutY="170.0" maxWidth="50.0" minHeight="50.0" onAction="#chosenColor" prefHeight="50.0" prefWidth="50.0" ripplerFill="#0e6512" style="-fx-background-color: red; -fx-background-radius: 25;" text="" textFill="RED" />
+                                <JFXButton fx:id="btnPlayer2_yellow" buttonType="RAISED" ellipsisString=".." layoutX="153.0" layoutY="249.0" maxWidth="50.0" minHeight="50.0" onAction="#chosenColor" prefHeight="50.0" prefWidth="50.0" ripplerFill="#0e6512" style="-fx-background-color: yellow; -fx-background-radius: 25;" text="" textFill="YELLOW" />
+                                <JFXButton fx:id="btnPlayer2_green" buttonType="RAISED" ellipsisString=".." layoutX="153.0" layoutY="330.0" maxWidth="50.0" minHeight="50.0" onAction="#chosenColor" prefHeight="50.0" prefWidth="50.0" ripplerFill="YELLOW" style="-fx-background-color: green; -fx-background-radius: 25;" text="" textFill="#3d7c1a" />
+                            </children>
+                        </Pane>
+                        <Label fx:id="computerColourDisplay" alignment="CENTER" contentDisplay="CENTER" prefHeight="55.0" prefWidth="350.0" textFill="#860a0a">
+                            <font>
+                                <Font name="Chalkboard SE Bold" size="18.0" />
+                            </font>
+                        </Label>
+                        <JFXButton fx:id="gotoGame" buttonType="RAISED" onAction="#startGame" prefHeight="40.0" prefWidth="186.0" text="GO TO GAME   -&gt;" textFill="#18c315">
+                            <font>
+                                <Font name="Chalkboard SE Bold" size="18.0" />
+                            </font>
+                            <VBox.margin>
+                                <Insets left="160.0" />
+                            </VBox.margin>
+                        </JFXButton>
+                    </children>
+                </VBox>
+            </children>
+        </HBox>
+    </children>
+</AnchorPane>
